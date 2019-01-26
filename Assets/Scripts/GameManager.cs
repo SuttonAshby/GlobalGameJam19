@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour {
 
     public KeyCode pickApple {get; set;}
 
+    public bool nearCow = false;
+
   	private void Awake () {
 		if (Instance == null) {
 			Instance = this;
