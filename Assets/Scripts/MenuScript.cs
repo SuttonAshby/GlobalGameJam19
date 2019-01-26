@@ -18,20 +18,13 @@ public class MenuScript : MonoBehaviour
         menuPanel = transform.Find("Panel");
 
         //setting up for initial movement
-        if(GameManager.Instance.forward.ToString() != "None")
-        menuPanel.gameObject.SetActive(false);
+        if(GameManager.Instance.forward.ToString() != "None") {
+            menuPanel.gameObject.SetActive(false);
+        }
         waitingForKey = false;
 
-        for(int i = 0; i < menuPanel.childCount; i++){
-            if(menuPanel.GetChild(i).name == "ForwardKey")
-                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.forward.ToString();
-            else if(menuPanel.GetChild(i).name == "BackwardKey")
-                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.backward.ToString();
-            else if(menuPanel.GetChild(i).name == "LeftKey")
-                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.left.ToString();
-            else if(menuPanel.GetChild(i).name == "RightKey")
-                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.right.ToString();
-        }
+        loopPanelNames();
+
     }
 
     // Update is called once per frame
@@ -91,6 +84,11 @@ public class MenuScript : MonoBehaviour
                 buttonText.text = GameManager.Instance.right.ToString();
                 PlayerPrefs.SetString("rightKey", GameManager.Instance.right.ToString());
                 break;
+            case "pickApple":
+                GameManager.Instance.pickApple = newKey;
+                buttonText.text = GameManager.Instance.pickApple.ToString();
+                PlayerPrefs.SetString("pickApple", GameManager.Instance.pickApple.ToString());
+                break;
         }
         yield return null;
     }
@@ -100,10 +98,16 @@ public class MenuScript : MonoBehaviour
         GameManager.Instance.backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
         GameManager.Instance.left = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
         GameManager.Instance.right = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        GameManager.Instance.pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
         PlayerPrefs.SetString("forwardKey", GameManager.Instance.forward.ToString());
         PlayerPrefs.SetString("backwardKey", GameManager.Instance.backward.ToString());
         PlayerPrefs.SetString("leftKey", GameManager.Instance.left.ToString());
         PlayerPrefs.SetString("rightKey", GameManager.Instance.right.ToString());
+        PlayerPrefs.SetString("pickApple", GameManager.Instance.right.ToString());
+        loopPanelNames();
+    }
+
+    public void loopPanelNames(){
         for(int i = 0; i < menuPanel.childCount; i++){
             if(menuPanel.GetChild(i).name == "ForwardKey")
                 menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.forward.ToString();
@@ -113,6 +117,8 @@ public class MenuScript : MonoBehaviour
                 menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.left.ToString();
             else if(menuPanel.GetChild(i).name == "RightKey")
                 menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.right.ToString();
+            else if(menuPanel.GetChild(i).name == "PickApple")
+                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.pickApple.ToString();
         }
     }
 

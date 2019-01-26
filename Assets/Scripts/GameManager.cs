@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour {
     public KeyCode left {get; set;}
     public KeyCode right {get; set;}
 
-    
+    public KeyCode pickApple {get; set;}
 
   	private void Awake () {
 		if (Instance == null) {
@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour {
     left = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("leftKey", "None"));
     right = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("rightKey", "None"));
 
+    pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickApple", "None"));
 	}
 
 
