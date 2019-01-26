@@ -16,6 +16,9 @@ public class MenuScript : MonoBehaviour
     void Start()
     {
         menuPanel = transform.Find("Panel");
+
+        //setting up for initial movement
+        if(GameManager.Instance.forward.ToString() != "None")
         menuPanel.gameObject.SetActive(false);
         waitingForKey = false;
 
@@ -71,21 +74,46 @@ public class MenuScript : MonoBehaviour
             case "forward":
                 GameManager.Instance.forward = newKey;
                 buttonText.text = GameManager.Instance.forward.ToString();
+                PlayerPrefs.SetString("forwardKey", GameManager.Instance.forward.ToString());
                 break;
             case "backward":
                 GameManager.Instance.backward = newKey;
                 buttonText.text = GameManager.Instance.backward.ToString();
+                PlayerPrefs.SetString("backwardKey", GameManager.Instance.backward.ToString());
                 break;
             case "left":
                 GameManager.Instance.left = newKey;
                 buttonText.text = GameManager.Instance.left.ToString();
+                PlayerPrefs.SetString("leftKey", GameManager.Instance.left.ToString());
                 break;
             case "right":
                 GameManager.Instance.right = newKey;
                 buttonText.text = GameManager.Instance.right.ToString();
+                PlayerPrefs.SetString("rightKey", GameManager.Instance.right.ToString());
                 break;
         }
         yield return null;
+    }
+
+    public void resetBindings(){
+        GameManager.Instance.forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        GameManager.Instance.backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        GameManager.Instance.left = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        GameManager.Instance.right = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("forwardKey", GameManager.Instance.forward.ToString());
+        PlayerPrefs.SetString("backwardKey", GameManager.Instance.backward.ToString());
+        PlayerPrefs.SetString("leftKey", GameManager.Instance.left.ToString());
+        PlayerPrefs.SetString("rightKey", GameManager.Instance.right.ToString());
+        for(int i = 0; i < menuPanel.childCount; i++){
+            if(menuPanel.GetChild(i).name == "ForwardKey")
+                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.forward.ToString();
+            else if(menuPanel.GetChild(i).name == "BackwardKey")
+                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.backward.ToString();
+            else if(menuPanel.GetChild(i).name == "LeftKey")
+                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.left.ToString();
+            else if(menuPanel.GetChild(i).name == "RightKey")
+                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.right.ToString();
+        }
     }
 
 }

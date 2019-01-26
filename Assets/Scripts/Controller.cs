@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
+    public float sensitivity = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,18 +15,26 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        
+
         if(Input.GetKey(GameManager.Instance.forward)) {
-            transform.position += Vector3.forward / 2;
+            transform.position += transform.forward / 2;
         }
         if(Input.GetKey(GameManager.Instance.backward)) {
-            transform.position += -Vector3.forward / 2;
+            transform.position += -transform.forward / 2;
         }
         if(Input.GetKey(GameManager.Instance.left)) {
-            transform.position += Vector3.left / 2;
+            transform.position += -transform.right / 2;
         }
         if(Input.GetKey(GameManager.Instance.right)) {
-            transform.position += -Vector3.left / 2;
-        }  
-            
+            transform.position += transform.right / 2;
+        }
+
+        //FPS camera
+        // rotX = Input.GetAxis ("Mouse X") + sensitivity;
+        // rotY = Input.GetAxis ("mouse Y") + sensitivity;   
+        // transform.Rotate (0, rotX, 0);
+
     }
 }

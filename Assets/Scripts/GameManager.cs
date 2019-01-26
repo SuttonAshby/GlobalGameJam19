@@ -20,10 +20,10 @@ public class GameManager : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
-    forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "W");
-    backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "S");
-    left = (KeyCode) System.Enum.Parse(typeof(KeyCode), "A");
-    right = (KeyCode) System.Enum.Parse(typeof(KeyCode), "D");
+    forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("forwardKey", "None"));
+    backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("backwardKey", "None"));
+    left = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("leftKey", "None"));
+    right = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("rightKey", "None"));
 
 	}
 
