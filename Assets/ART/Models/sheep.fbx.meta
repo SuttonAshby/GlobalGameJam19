@@ -12,7 +12,17 @@ ModelImporter:
     2300000: sheep_body
     3300000: sheep_body
     4300000: sheep_body
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sheep_body1
+    second: {fileID: 2100000, guid: ef667dd02f2ff4336b211c9ab6af2e48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sheep_wool
+    second: {fileID: 2100000, guid: 99a5173692c0543faa89ba975a09a764, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
