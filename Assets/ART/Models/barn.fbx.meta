@@ -1,0 +1,270 @@
+fileFormatVersion: 2
+guid: ae0cef3d0a28a4e05834ccf58b7a36e4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: door_support
+    100004: door_support 1
+    100006: door_support 2
+    100008: door_support 3
+    100010: door_support 4
+    100012: door_support 5
+    100014: door_support 6
+    100016: door_support 7
+    100018: door_support 8
+    100020: door_support2
+    100022: door_support2 1
+    100024: door_support2 2
+    100026: door_support2 3
+    100028: door_support2 4
+    100030: door_support2 5
+    100032: door_support2 6
+    100034: door_support2 7
+    100036: door_support2 8
+    100038: doorframe
+    100040: doorframe1
+    100042: doorframe1_door_support2
+    100044: doorframe2
+    100046: doorframe2_door_support
+    100048: doorframe3
+    100050: doorframe3_door_support
+    100052: doorframe4
+    100054: doorframe4_door_support
+    100056: doorframe5
+    100058: doorframe6
+    100060: doorframe7
+    100062: doorframe8
+    100064: doorframe_door_support2
+    100066: doorframe_door_support2 1
+    100068: doorframe_door_support2 2
+    100070: doorframe_door_support2 3
+    100072: doorframe_door_support2 4
+    100074: transform1
+    100076: transform1 1
+    100078: transform1 2
+    100080: transform1 3
+    100082: transform1 4
+    100084: transform10
+    100086: transform2
+    100088: transform2 1
+    100090: transform2 2
+    100092: transform2 3
+    100094: transform2 4
+    100096: transform3
+    100098: transform4
+    100100: transform5
+    100102: transform6
+    100104: transform7
+    100106: transform8
+    100108: transform9
+    400000: //RootNode
+    400002: door_support
+    400004: door_support 1
+    400006: door_support 2
+    400008: door_support 3
+    400010: door_support 4
+    400012: door_support 5
+    400014: door_support 6
+    400016: door_support 7
+    400018: door_support 8
+    400020: door_support2
+    400022: door_support2 1
+    400024: door_support2 2
+    400026: door_support2 3
+    400028: door_support2 4
+    400030: door_support2 5
+    400032: door_support2 6
+    400034: door_support2 7
+    400036: door_support2 8
+    400038: doorframe
+    400040: doorframe1
+    400042: doorframe1_door_support2
+    400044: doorframe2
+    400046: doorframe2_door_support
+    400048: doorframe3
+    400050: doorframe3_door_support
+    400052: doorframe4
+    400054: doorframe4_door_support
+    400056: doorframe5
+    400058: doorframe6
+    400060: doorframe7
+    400062: doorframe8
+    400064: doorframe_door_support2
+    400066: doorframe_door_support2 1
+    400068: doorframe_door_support2 2
+    400070: doorframe_door_support2 3
+    400072: doorframe_door_support2 4
+    400074: transform1
+    400076: transform1 1
+    400078: transform1 2
+    400080: transform1 3
+    400082: transform1 4
+    400084: transform10
+    400086: transform2
+    400088: transform2 1
+    400090: transform2 2
+    400092: transform2 3
+    400094: transform2 4
+    400096: transform3
+    400098: transform4
+    400100: transform5
+    400102: transform6
+    400104: transform7
+    400106: transform8
+    400108: transform9
+    2100000: barn_red
+    2100002: barn_white
+    2300000: //RootNode
+    2300002: doorframe
+    2300004: doorframe1
+    2300006: doorframe1_door_support2
+    2300008: doorframe2
+    2300010: doorframe2_door_support
+    2300012: doorframe3
+    2300014: doorframe3_door_support
+    2300016: doorframe4
+    2300018: doorframe4_door_support
+    2300020: doorframe5
+    2300022: doorframe6
+    2300024: doorframe7
+    2300026: doorframe8
+    2300028: doorframe_door_support2
+    2300030: doorframe_door_support2 1
+    2300032: doorframe_door_support2 2
+    2300034: doorframe_door_support2 3
+    2300036: doorframe_door_support2 4
+    3300000: //RootNode
+    3300002: doorframe
+    3300004: doorframe1
+    3300006: doorframe1_door_support2
+    3300008: doorframe2
+    3300010: doorframe2_door_support
+    3300012: doorframe3
+    3300014: doorframe3_door_support
+    3300016: doorframe4
+    3300018: doorframe4_door_support
+    3300020: doorframe5
+    3300022: doorframe6
+    3300024: doorframe7
+    3300026: doorframe8
+    3300028: doorframe_door_support2
+    3300030: doorframe_door_support2 1
+    3300032: doorframe_door_support2 2
+    3300034: doorframe_door_support2 3
+    3300036: doorframe_door_support2 4
+    4300000: barn
+    4300002: doorframe
+    4300004: doorframe_door_support2
+    4300006: doorframe1
+    4300008: doorframe1_door_support2
+    4300010: doorframe2
+    4300012: doorframe2_door_support
+    4300014: doorframe3
+    4300016: doorframe3_door_support
+    4300018: doorframe4
+    4300020: doorframe4_door_support
+    4300022: doorframe5
+    4300024: doorframe_door_support2
+    4300026: doorframe6
+    4300028: doorframe_door_support2
+    4300030: doorframe7
+    4300032: doorframe_door_support2
+    4300034: doorframe8
+    4300036: doorframe_door_support2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: barn_red
+    second: {fileID: 2100000, guid: e7d00869ff3304128b10c3bd7ce898fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: barn_white
+    second: {fileID: 2100000, guid: 687f5a9b8d823438ca953de969af14d2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.9
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
