@@ -5,6 +5,7 @@ using UnityEngine;
 public class nearAnimal : MonoBehaviour
 {
     public string animal;
+    public GameObject menuPanel;
 
     void OnTriggerEnter(Collider other){
         // Debug.Log("Object has entered the trigger");
