@@ -60,7 +60,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e32c816ac2f8a4e9db764dcf1bc27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clips: []
+  Clips:
+  - {fileID: 8300000, guid: 30055dcb006c32348aa6c575d8fea811, type: 3}
+  - {fileID: 8300000, guid: 720adb379e96b944ebde6ba58290cea0, type: 3}
+  - {fileID: 8300000, guid: 952055096331cee40b4a8dbdcef79025, type: 3}
+  - {fileID: 8300000, guid: 4d7eaa0bdb21f2f4e8414c89590d1c81, type: 3}
+  - {fileID: 8300000, guid: d046e0007f2159b44a6bd796d93a9328, type: 3}
   Volume: 0
   RandomVolume: -2.7
   Pitch: 0
