@@ -21,23 +21,23 @@ public class DynamicMenuScript : MonoBehaviour
         waitingForKey = false;
 
         //setting up for initial movement
-        if(GameManager.Instance.forward.ToString() == "None") {
+//        if(GameManager.Instance.forward.ToString() == "None") {
+            
+////            label = transform.Find("VerbLabel");
+////            label.GetComponent<Text>().text = "Move";
 
-//            label = transform.Find("VerbLabel");
-//            label.GetComponent<Text>().text = "Move";
-
-            GameManager.Instance.currentBinding = "forward";
-            menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
-        } else if (GameManager.Instance.backward.ToString() == "None"){
-            GameManager.Instance.currentBinding = "backward";
-            menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
-        } else if (GameManager.Instance.left.ToString() == "None"){
-            GameManager.Instance.currentBinding = "left";
-            menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
-        } else if (GameManager.Instance.right.ToString() == "None"){
-            GameManager.Instance.currentBinding = "right";
-            menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
-        }
+        //    GameManager.Instance.currentBinding = "forward";
+        //    menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+        //} else if (GameManager.Instance.backward.ToString() == "None"){
+        //    GameManager.Instance.currentBinding = "backward";
+        //    menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+        //} else if (GameManager.Instance.left.ToString() == "None"){
+        //    GameManager.Instance.currentBinding = "left";
+        //    menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+        //} else if (GameManager.Instance.right.ToString() == "None"){
+        //    GameManager.Instance.currentBinding = "right";
+        //    menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+        //}
 
         // loopPanelNames();
 
@@ -144,10 +144,10 @@ public class DynamicMenuScript : MonoBehaviour
 
     public void resetBindings(){
         //movement
-        GameManager.Instance.forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
-        GameManager.Instance.backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
-        GameManager.Instance.left = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
-        GameManager.Instance.right = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        GameManager.Instance.forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "W");
+        GameManager.Instance.backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "S");
+        GameManager.Instance.left = (KeyCode) System.Enum.Parse(typeof(KeyCode), "A");
+        GameManager.Instance.right = (KeyCode) System.Enum.Parse(typeof(KeyCode), "D");
         //pick ups
         GameManager.Instance.pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
         GameManager.Instance.pickOrange = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
