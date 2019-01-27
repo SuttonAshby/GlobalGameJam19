@@ -10,6 +10,8 @@ public class PickupObject : MonoBehaviour
     public float distance;
     public float smooth;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,9 @@ public class PickupObject : MonoBehaviour
             carry(carriedObject);
             checkDrop();
         } else {
-            pickup();
+            pickupApple();
+            pickupCoconut();
+            pickupOrange();
         }
     }
 
@@ -32,8 +36,12 @@ public class PickupObject : MonoBehaviour
         o.transform.position = Vector3.Lerp (o.transform.position, mainCamera.transform.position + mainCamera.transform.forward * distance, Time.deltaTime * smooth);
     }
 
-    void pickup(){
-        if(Input.GetKeyDown(KeyCode.E)){
+    // void pickup(){
+
+    // }
+
+    void pickupApple(){
+        if(Input.GetKeyDown(GameManager.Instance.pickApple)){
             int x = Screen.width / 2;
             int y = Screen.height / 2;
 
@@ -41,8 +49,45 @@ public class PickupObject : MonoBehaviour
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit)) {
                 Pickupable p = hit.collider.GetComponent<Pickupable>();
-                Debug.Log(p);
-                if(p != null) {
+                // Debug.Log(p);
+                // Debug.Log(p.fruitType);
+                if(p.fruitType == "apple") {
+                    carrying = true;
+                    carriedObject = p.gameObject;
+                }
+            }
+        }
+    }
+    void pickupCoconut(){
+        if(Input.GetKeyDown(GameManager.Instance.pickCoconut)){
+            int x = Screen.width / 2;
+            int y = Screen.height / 2;
+
+            Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x,y));
+            RaycastHit hit;
+            if(Physics.Raycast(ray, out hit)) {
+                Pickupable p = hit.collider.GetComponent<Pickupable>();
+                // Debug.Log(p);
+                // Debug.Log(p.fruitType);
+                if(p.fruitType == "coconut") {
+                    carrying = true;
+                    carriedObject = p.gameObject;
+                }
+            }
+        }
+    }
+    void pickupOrange(){
+        if(Input.GetKeyDown(GameManager.Instance.pickOrange)){
+            int x = Screen.width / 2;
+            int y = Screen.height / 2;
+
+            Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x,y));
+            RaycastHit hit;
+            if(Physics.Raycast(ray, out hit)) {
+                Pickupable p = hit.collider.GetComponent<Pickupable>();
+                // Debug.Log(p);
+                // Debug.Log(p.fruitType);
+                if(p.fruitType == "orange") {
                     carrying = true;
                     carriedObject = p.gameObject;
                 }
@@ -51,14 +96,21 @@ public class PickupObject : MonoBehaviour
     }
 
     void checkDrop(){
-        if(Input.GetKeyUp(KeyCode.E)){
+        //letting go of any pick up fruit button drops the object
+        if(Input.GetKeyUp(GameManager.Instance.pickApple) || Input.GetKeyUp(GameManager.Instance.pickOrange) || Input.GetKeyUp(GameManager.Instance.pickCoconut)){
             dropObject();
-        } else if (Input.GetKeyDown(KeyCode.R) && GameManager.Instance.nearCow){
-            Debug.Log("The cow ate the apple");
+        } else if (Input.GetKeyDown(GameManager.Instance.feedCow) && GameManager.Instance.nearCow && (carriedObject.GetComponent<Pickupable>().fruitType != GameManager.Instance.cowNotEat)){
             carrying = false;
             Destroy(carriedObject);
             carriedObject = null;
-
+        } else if (Input.GetKeyDown(GameManager.Instance.feedSheep) && GameManager.Instance.nearSheep && (carriedObject.GetComponent<Pickupable>().fruitType != GameManager.Instance.sheepNotEat)){
+            carrying = false;
+            Destroy(carriedObject);
+            carriedObject = null;
+        } else if (Input.GetKeyDown(GameManager.Instance.feedPig) && GameManager.Instance.nearPig && (carriedObject.GetComponent<Pickupable>().fruitType != GameManager.Instance.pigNotEat)){
+            carrying = false;
+            Destroy(carriedObject);
+            carriedObject = null;
         }
     }
     void dropObject(){

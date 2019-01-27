@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour {
 
     //animal fruit anti-pairing
     public string cowNotEat = "apple";
-    public string sheepNotEat = "coconut";
-    public string pigNotEat = "orange";
+    public string sheepNotEat = "orange";
+    public string pigNotEat = "coconut";
     
     //animal proximity
     public bool nearCow = false;
@@ -51,11 +51,14 @@ public class GameManager : MonoBehaviour {
     left = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("leftKey", "A"));
     right = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("rightKey", "D"));
     //setting pick ups
-    pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickApple", "None"));
+    // pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickApple", "E"));
+    pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), "E"); //TESTING PURPOSES
 	pickOrange = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickOrange", "None"));
-    pickCoconut = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickCoconut", "None"));
+    // pickCoconut = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickCoconut", "None"));
+    pickCoconut = (KeyCode) System.Enum.Parse(typeof(KeyCode), "T"); //TESTING PURPOSES
     //setting feeding
-    feedCow = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("feedCow", "None"));
+    // feedCow = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("feedCow", "None"));
+    feedCow = (KeyCode) System.Enum.Parse(typeof(KeyCode), "R"); //TESTING PURPOSES
     feedSheep = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("feedSheep", "None"));
     feedPig = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("feedPig", "None"));
     }
