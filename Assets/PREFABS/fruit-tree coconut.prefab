@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 8857644452948456529}
   - component: {fileID: 1071464932689776595}
   - component: {fileID: 4582653408210548652}
+  - component: {fileID: 1172750416602319842}
   m_Layer: 0
   m_Name: fruit-tree coconut
   m_TagString: Untagged
@@ -224,6 +225,22 @@ MonoBehaviour:
   RandomPitch: 0
   Loop: 0
   Blend: 1
+--- !u!114 &1172750416602319842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8406227456786853958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d4796c87a8a42cf8c3d522551bb3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuPanel: {fileID: 0}
+  fruitType: coconut
+  spawnee: {fileID: 4227183566085269003, guid: 246a4dbfa63ac4a9088469c6292077bd, type: 3}
+  spawnPos: {fileID: 0}
 --- !u!1001 &4271178320654861186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -231,6 +248,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8857644452948456529}
     m_Modifications:
+    - target: {fileID: 4227183566085269003, guid: 1e4dca0b293bac74b9d2e60fea541937,
+        type: 3}
+      propertyPath: m_Name
+      value: coconut
+      objectReference: {fileID: 0}
     - target: {fileID: 5494241901679557449, guid: 1e4dca0b293bac74b9d2e60fea541937,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -286,11 +308,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4227183566085269003, guid: 1e4dca0b293bac74b9d2e60fea541937,
-        type: 3}
-      propertyPath: m_Name
-      value: coconut
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e4dca0b293bac74b9d2e60fea541937, type: 3}
 --- !u!4 &8608967051661719755 stripped
@@ -306,6 +323,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8857644452948456529}
     m_Modifications:
+    - target: {fileID: 4227183566085269003, guid: 1e4dca0b293bac74b9d2e60fea541937,
+        type: 3}
+      propertyPath: m_Name
+      value: coconut (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 5494241901679557449, guid: 1e4dca0b293bac74b9d2e60fea541937,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -361,11 +383,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4227183566085269003, guid: 1e4dca0b293bac74b9d2e60fea541937,
-        type: 3}
-      propertyPath: m_Name
-      value: coconut (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e4dca0b293bac74b9d2e60fea541937, type: 3}
 --- !u!4 &2886066897996144978 stripped
@@ -381,6 +398,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8857644452948456529}
     m_Modifications:
+    - target: {fileID: 4227183566085269003, guid: 1e4dca0b293bac74b9d2e60fea541937,
+        type: 3}
+      propertyPath: m_Name
+      value: coconut (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 5494241901679557449, guid: 1e4dca0b293bac74b9d2e60fea541937,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -435,11 +457,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4227183566085269003, guid: 1e4dca0b293bac74b9d2e60fea541937,
-        type: 3}
-      propertyPath: m_Name
-      value: coconut (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e4dca0b293bac74b9d2e60fea541937, type: 3}
