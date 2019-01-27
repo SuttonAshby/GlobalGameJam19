@@ -32,6 +32,9 @@ public class GameManager : MonoBehaviour {
     public bool nearSheep = false;
     public bool nearPig = false;
 
+    //keep track of what is being bound now
+    public string currentBinding = "";
+
   	private void Awake () {
         //initiate singleton
 		if (Instance == null) {
@@ -42,7 +45,7 @@ public class GameManager : MonoBehaviour {
 		}
 
     //setting bindings to player preferences or default
-    //setting movememnt
+    //setting movement
     forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("forwardKey", "None"));
     backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("backwardKey", "None"));
     left = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("leftKey", "None"));
