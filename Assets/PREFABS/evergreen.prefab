@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8129985072540960806}
   - component: {fileID: 477192387993470254}
   - component: {fileID: 4598601687082109057}
+  - component: {fileID: 3447788188206132809}
   m_Layer: 0
   m_Name: evergreen
   m_TagString: Untagged
@@ -97,3 +98,17 @@ MonoBehaviour:
   RandomPitch: 0
   Loop: 0
   Blend: 1
+--- !u!136 &3447788188206132809
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750977924648126924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.036732506
+  m_Height: 0.14800946
+  m_Direction: 1
+  m_Center: {x: -0.00085861766, y: 0.0540051, z: -0.00026688742}
