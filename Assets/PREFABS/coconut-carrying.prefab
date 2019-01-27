@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 505104565694634051}
   - component: {fileID: 2281532293194042318}
   - component: {fileID: 1960722310593987210}
+  - component: {fileID: 2831369943616404209}
   m_Layer: 0
   m_Name: coconut-carrying
   m_TagString: Untagged
@@ -128,3 +129,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2831369943616404209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227183566085269003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5520ac2692fc1a44a02559d09ad3173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitType: coconut

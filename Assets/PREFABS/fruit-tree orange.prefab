@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9213983162311971316}
   - component: {fileID: 2818630733292194015}
   - component: {fileID: 366195885037507378}
+  - component: {fileID: 5272259409862180864}
   m_Layer: 0
   m_Name: fruit-tree orange
   m_TagString: Untagged
@@ -70,6 +71,22 @@ MonoBehaviour:
   RandomPitch: 0
   Loop: 0
   Blend: 1
+--- !u!114 &5272259409862180864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553665738832029415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d4796c87a8a42cf8c3d522551bb3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuPanel: {fileID: 0}
+  fruitType: orange
+  spawnee: {fileID: 5976858607290370116, guid: 43059090bf1f144fdb25f7686bf1571e, type: 3}
+  spawnPos: {fileID: 0}
 --- !u!1 &5604070721959448518
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +248,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9213983162311971316}
     m_Modifications:
+    - target: {fileID: 5976858607290370116, guid: 8943034ae7f513e4fb3a47d59036d178,
+        type: 3}
+      propertyPath: m_Name
+      value: orange
+      objectReference: {fileID: 0}
     - target: {fileID: 3196056555133676536, guid: 8943034ae7f513e4fb3a47d59036d178,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -286,11 +308,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5976858607290370116, guid: 8943034ae7f513e4fb3a47d59036d178,
-        type: 3}
-      propertyPath: m_Name
-      value: orange
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8943034ae7f513e4fb3a47d59036d178, type: 3}
 --- !u!4 &181717778755355178 stripped
@@ -306,6 +323,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9213983162311971316}
     m_Modifications:
+    - target: {fileID: 5976858607290370116, guid: 8943034ae7f513e4fb3a47d59036d178,
+        type: 3}
+      propertyPath: m_Name
+      value: orange (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 3196056555133676536, guid: 8943034ae7f513e4fb3a47d59036d178,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -361,11 +383,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5976858607290370116, guid: 8943034ae7f513e4fb3a47d59036d178,
-        type: 3}
-      propertyPath: m_Name
-      value: orange (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8943034ae7f513e4fb3a47d59036d178, type: 3}
 --- !u!4 &7436992725996008348 stripped
@@ -381,6 +398,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9213983162311971316}
     m_Modifications:
+    - target: {fileID: 5976858607290370116, guid: 8943034ae7f513e4fb3a47d59036d178,
+        type: 3}
+      propertyPath: m_Name
+      value: orange (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 3196056555133676536, guid: 8943034ae7f513e4fb3a47d59036d178,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -435,11 +457,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5976858607290370116, guid: 8943034ae7f513e4fb3a47d59036d178,
-        type: 3}
-      propertyPath: m_Name
-      value: orange (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8943034ae7f513e4fb3a47d59036d178, type: 3}
