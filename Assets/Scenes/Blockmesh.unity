@@ -41043,8 +41043,187 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: sheep
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
+  menuPanel: {fileID: 0}
+--- !u!1 &1618555762863717868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4621296220169586441, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
     type: 3}
+  m_PrefabInstance: {fileID: 1618555762863717840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618555762863717869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6900774535909613632, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1618555762863717840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618555762863717870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5387557090058553833, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1618555762863717840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618555762863717871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 22285562, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1618555762863717840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618555762863717872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1791978865, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1618555762863717840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618555762863717873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1274529226, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1618555762863717840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618555762863717874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1889097349, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1618555762863717840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618555762863717875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 532927274, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1618555762863717840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618555762863717876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1184447608, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1618555762863717840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1618555762863717877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618555762863717868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d3b72dd507c4e11b6d5659fd89d7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal: cow
+  menuPanel: {fileID: 0}
+--- !u!114 &1618555762863717878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618555762863717869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d3b72dd507c4e11b6d5659fd89d7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal: cow
+  menuPanel: {fileID: 0}
+--- !u!114 &1618555762863717879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618555762863717870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d3b72dd507c4e11b6d5659fd89d7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal: pig
+  menuPanel: {fileID: 0}
+--- !u!114 &1618555762863717880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618555762863717871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d3b72dd507c4e11b6d5659fd89d7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal: pig
+  menuPanel: {fileID: 0}
+--- !u!114 &1618555762863717881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618555762863717872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d3b72dd507c4e11b6d5659fd89d7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal: pig
+  menuPanel: {fileID: 0}
+--- !u!114 &1618555762863717882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618555762863717873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d3b72dd507c4e11b6d5659fd89d7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal: cow
+  menuPanel: {fileID: 0}
+--- !u!114 &1618555762863717883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618555762863717874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d3b72dd507c4e11b6d5659fd89d7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal: cow
+  menuPanel: {fileID: 0}
+--- !u!114 &1618555762863717884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618555762863717875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d3b72dd507c4e11b6d5659fd89d7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal: cow
+  menuPanel: {fileID: 0}
+--- !u!114 &1618555762863717885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618555762863717876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d3b72dd507c4e11b6d5659fd89d7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal: pig
+  menuPanel: {fileID: 0}
 --- !u!1001 &4638861118192964944
 PrefabInstance:
   m_ObjectHideFlags: 0

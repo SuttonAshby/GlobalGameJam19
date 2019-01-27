@@ -7,6 +7,11 @@ public class nearAnimal : MonoBehaviour
     public string animal;
     public GameObject menuPanel;
 
+    void Start()
+    {
+        menuPanel = GameObject.Find("inputpromptBackground");
+    }
+
     void OnTriggerEnter(Collider other){
         // Debug.Log("Object has entered the trigger");
 
