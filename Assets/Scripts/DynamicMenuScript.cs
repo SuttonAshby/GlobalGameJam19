@@ -27,10 +27,10 @@ public class DynamicMenuScript : MonoBehaviour
             GameManager.Instance.currentBinding = "backward";
             menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
         } else if (GameManager.Instance.left.ToString() == "None"){
-            GameManager.Instance.currentBinding = "backward";
+            GameManager.Instance.currentBinding = "left";
             menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
         } else if (GameManager.Instance.right.ToString() == "None"){
-            GameManager.Instance.currentBinding = "backward";
+            GameManager.Instance.currentBinding = "right";
             menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
         }
 

@@ -46,10 +46,10 @@ public class GameManager : MonoBehaviour {
 
     //setting bindings to player preferences or default
     //setting movement
-    forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("forwardKey", "None"));
-    backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("backwardKey", "None"));
-    left = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("leftKey", "None"));
-    right = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("rightKey", "None"));
+    forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("forwardKey", "W"));
+    backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("backwardKey", "S"));
+    left = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("leftKey", "A"));
+    right = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("rightKey", "D"));
     //setting pick ups
     pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickApple", "None"));
 	pickOrange = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickOrange", "None"));
