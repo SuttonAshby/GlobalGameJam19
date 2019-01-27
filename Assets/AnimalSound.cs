@@ -9,27 +9,27 @@ public class AnimalSound : MonoBehaviour
 
     private float counter = 0;
     private ObjectSounds objectSounds;
-    private bool willPlay;
+    public bool willPlay;
 
-    
+
     void Start()
     {
         objectSounds = GetComponent<ObjectSounds>();
     }
 
-    
+
     void Update()
     {
         if ((gameObject.name == "cow") && (GameManager.Instance.nearCow == true))
-            {
+        {
             willPlay = true;
         }
         if ((gameObject.name == "pig") && (GameManager.Instance.nearPig == true))
-         {
+        {
             willPlay = true;
-         }
+        }
         if ((gameObject.name == "sheep") && (GameManager.Instance.nearSheep == true))
-         {
+        {
             willPlay = true;
         }
         if (willPlay == true)
