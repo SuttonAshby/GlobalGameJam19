@@ -53,6 +53,12 @@ public class PickupObject : MonoBehaviour
     void checkDrop(){
         if(Input.GetKeyUp(KeyCode.E)){
             dropObject();
+        } else if (Input.GetKeyDown(KeyCode.R) && GameManager.Instance.nearCow){
+            Debug.Log("The cow ate the apple");
+            carrying = false;
+            Destroy(carriedObject);
+            carriedObject = null;
+
         }
     }
     void dropObject(){
