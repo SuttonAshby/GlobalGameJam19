@@ -116,8 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7225274f485d48418ba87adf0721231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Threshhold: 0.1
-  RandomTiming: 0
+  Threshhold: 5
+  RandomTiming: 10
   willPlay: 0
 --- !u!82 &4834838659798839999
 AudioSource:
