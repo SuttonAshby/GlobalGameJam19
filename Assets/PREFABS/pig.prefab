@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7771022121329919711}
   - component: {fileID: 7188748442542620522}
   - component: {fileID: 1575016074356479043}
+  - component: {fileID: 4467411686043914373}
   m_Layer: 0
   m_Name: pig
   m_TagString: Untagged
@@ -65,6 +66,20 @@ MonoBehaviour:
   RandomPitch: 0
   Loop: 0
   Blend: 1
+--- !u!114 &4467411686043914373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4379230168199471371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7225274f485d48418ba87adf0721231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Threshhold: 0.1
+  RandomTiming: 0
 --- !u!1 &6263460594414000022
 GameObject:
   m_ObjectHideFlags: 0
