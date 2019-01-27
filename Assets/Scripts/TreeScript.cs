@@ -24,39 +24,29 @@ public class TreeScript : MonoBehaviour
 
 
     void OnTriggerEnter(Collider other){
-
+        Debug.Log("Object has entered the trigger");
         if(fruitType == "apple"){
             if(GameManager.Instance.pickApple.ToString() == "None"){
                 GameManager.Instance.currentBinding = "pickApple";
                 menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
                 //instantiate apples from this tree
-
-            } else {
-                //instantiate apples from this tree
-
             }
         } else if(fruitType == "coconut"){
+            Debug.Log("FruitType is coconut");
             if(GameManager.Instance.pickCoconut.ToString() == "None"){
                 GameManager.Instance.currentBinding = "pickCoconut";
+                Debug.Log(GameManager.Instance.currentBinding);
                 menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
                 //instantiate coconuts from this tree
-
-            } else {
-                //instantiate coconuts from this tree
-
             }
         } else if(fruitType == "orange"){
             if(GameManager.Instance.pickOrange.ToString() == "None"){
                 GameManager.Instance.currentBinding = "pickOrange";
                 menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
                 //instantiate oranges from this tree
-
-            } else {
-                //instantiate oranges from this tree
-
-            }
+            } 
         }
-        // Debug.Log("Object has entered the trigger");
+        
     }
 
     public void spawnFruit(){
@@ -67,8 +57,9 @@ public class TreeScript : MonoBehaviour
         // Debug.Log("Object is in the trigger");
     // }
     void OnTriggerExit(Collider other){
-        // Debug.Log("Object exited the trigger");
+        Debug.Log("Object exited the trigger");
         if(canSpawn){
+            Debug.Log("spawning");
             spawnFruit();
             canSpawn = false;
         }

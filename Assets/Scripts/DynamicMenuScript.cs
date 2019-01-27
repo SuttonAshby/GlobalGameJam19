@@ -9,7 +9,6 @@ public class DynamicMenuScript : MonoBehaviour
     Event keyEvent;
     Text buttonText;
     KeyCode newKey;
-    GameObject label;
 
     bool waitingForKey;
 
@@ -22,10 +21,6 @@ public class DynamicMenuScript : MonoBehaviour
 
         //setting up for initial movement
         if(GameManager.Instance.forward.ToString() == "None") {
-
-            label = transform.Find("VerbLabel");
-            label.GetComponent<Text>().text = "Move";
-
             GameManager.Instance.currentBinding = "forward";
             menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
         } else if (GameManager.Instance.backward.ToString() == "None"){
