@@ -103,6 +103,31 @@ public class DynamicMenuScript : MonoBehaviour
                 PlayerPrefs.SetString("pickApple", GameManager.Instance.pickApple.ToString());
                 resetCurrentBinding();
                 break;
+            case "pickCoconut":
+                GameManager.Instance.pickCoconut = newKey;
+                PlayerPrefs.SetString("pickCoconut", GameManager.Instance.pickCoconut.ToString());
+                resetCurrentBinding();
+                break;
+            case "pickOrange":
+                GameManager.Instance.pickOrange = newKey;
+                PlayerPrefs.SetString("pickOrange", GameManager.Instance.pickOrange.ToString());
+                resetCurrentBinding();
+                break;
+            case "feedCow":
+                GameManager.Instance.feedCow = newKey;
+                PlayerPrefs.SetString("feedCow", GameManager.Instance.feedCow.ToString());
+                resetCurrentBinding();
+                break;
+            case "feedSheep":
+                GameManager.Instance.feedSheep = newKey;
+                PlayerPrefs.SetString("feedSheep", GameManager.Instance.feedSheep.ToString());
+                resetCurrentBinding();
+                break;
+            case "feedPig":
+                GameManager.Instance.feedPig = newKey;
+                PlayerPrefs.SetString("feedPig", GameManager.Instance.feedPig.ToString());
+                resetCurrentBinding();
+                break;
         }
         yield return null;
     }
