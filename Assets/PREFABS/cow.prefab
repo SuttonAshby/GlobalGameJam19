@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2017225899669262427}
   - component: {fileID: 8686992606617275589}
   - component: {fileID: 7875793521827558976}
-  - component: {fileID: 5992699742561761613}
+  - component: {fileID: 6525171961079615858}
   m_Layer: 0
   m_Name: cow
   m_TagString: Untagged
@@ -78,7 +78,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &5992699742561761613
+--- !u!114 &6525171961079615858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1751817411419538777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beea0b80d7f151348ad3c4febd6983bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 59e32c816ac2f8a4e9db764dcf1bc27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Clips: []
