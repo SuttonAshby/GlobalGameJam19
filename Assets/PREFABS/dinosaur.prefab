@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4221104854900716491}
   - component: {fileID: 4471637138149003904}
   - component: {fileID: 1610357486626692209}
+  - component: {fileID: 3883141386004791328}
+  - component: {fileID: 4424259427361100480}
   m_Layer: 0
   m_Name: dinosaur
   m_TagString: Untagged
@@ -77,3 +79,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3883141386004791328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6689468600612903120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e32c816ac2f8a4e9db764dcf1bc27b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clips: []
+  Volume: 0
+  RandomVolume: 0
+  Pitch: 0
+  RandomPitch: 0
+  Loop: 0
+  Blend: 1
+--- !u!114 &4424259427361100480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6689468600612903120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7225274f485d48418ba87adf0721231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Threshhold: 0.1
+  RandomTiming: 0

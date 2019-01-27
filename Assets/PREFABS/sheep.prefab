@@ -57,8 +57,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a79e8ac28dc6d4b2ea8092e452a2a5a4, type: 3}
-  - {fileID: 2100002, guid: a79e8ac28dc6d4b2ea8092e452a2a5a4, type: 3}
+  - {fileID: 2100000, guid: ef667dd02f2ff4336b211c9ab6af2e48, type: 2}
+  - {fileID: 2100000, guid: 99a5173692c0543faa89ba975a09a764, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88,7 +88,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8934330362919211641}
   - component: {fileID: 6278160607793105695}
-  - component: {fileID: 2131413864151564349}
+  - component: {fileID: 1176000844403498682}
+  - component: {fileID: 3206493122059419928}
   m_Layer: 0
   m_Name: sheep
   m_TagString: Untagged
@@ -124,7 +125,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1634414, y: 2.3463511, z: 2.6178205}
   m_Center: {x: 0.052218795, y: 1.1956618, z: -0.019947171}
---- !u!114 &2131413864151564349
+--- !u!114 &1176000844403498682
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,7 +134,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9126077826356522048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beea0b80d7f151348ad3c4febd6983bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 59e32c816ac2f8a4e9db764dcf1bc27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Clips: []
@@ -143,3 +144,17 @@ MonoBehaviour:
   RandomPitch: 0
   Loop: 0
   Blend: 1
+--- !u!114 &3206493122059419928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9126077826356522048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7225274f485d48418ba87adf0721231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Threshhold: 0.1
+  RandomTiming: 0

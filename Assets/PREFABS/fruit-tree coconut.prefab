@@ -164,6 +164,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8857644452948456529}
   - component: {fileID: 1071464932689776595}
+  - component: {fileID: 4582653408210548652}
+  - component: {fileID: 1172750416602319842}
   m_Layer: 0
   m_Name: fruit-tree coconut
   m_TagString: Untagged
@@ -204,6 +206,41 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4582653408210548652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8406227456786853958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e32c816ac2f8a4e9db764dcf1bc27b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clips: []
+  Volume: 0
+  RandomVolume: 0
+  Pitch: 0
+  RandomPitch: 0
+  Loop: 0
+  Blend: 1
+--- !u!114 &1172750416602319842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8406227456786853958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d4796c87a8a42cf8c3d522551bb3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuPanel: {fileID: 0}
+  fruitType: coconut
+  spawnee: {fileID: 4227183566085269003, guid: 246a4dbfa63ac4a9088469c6292077bd, type: 3}
+  spawnPos: {fileID: 0}
 --- !u!1001 &4271178320654861186
 PrefabInstance:
   m_ObjectHideFlags: 0

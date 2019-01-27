@@ -24,13 +24,16 @@ public class GameManager : MonoBehaviour {
 
     //animal fruit anti-pairing
     public string cowNotEat = "apple";
-    public string sheepNotEat = "coconut";
-    public string pigNotEat = "orange";
+    public string sheepNotEat = "orange";
+    public string pigNotEat = "coconut";
     
     //animal proximity
     public bool nearCow = false;
     public bool nearSheep = false;
     public bool nearPig = false;
+
+    //keep track of what is being bound now
+    public string currentBinding = "";
 
   	private void Awake () {
         //initiate singleton
@@ -42,17 +45,20 @@ public class GameManager : MonoBehaviour {
 		}
 
     //setting bindings to player preferences or default
-    //setting movememnt
+    //setting movement
     forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("forwardKey", "None"));
     backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("backwardKey", "None"));
     left = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("leftKey", "None"));
     right = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("rightKey", "None"));
     //setting pick ups
     pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickApple", "None"));
+    // pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), "E"); //TESTING PURPOSES
 	pickOrange = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickOrange", "None"));
     pickCoconut = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("pickCoconut", "None"));
+    // pickCoconut = (KeyCode) System.Enum.Parse(typeof(KeyCode), "T"); //TESTING PURPOSES
     //setting feeding
     feedCow = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("feedCow", "None"));
+    // feedCow = (KeyCode) System.Enum.Parse(typeof(KeyCode), "R"); //TESTING PURPOSES
     feedSheep = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("feedSheep", "None"));
     feedPig = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("feedPig", "None"));
     }

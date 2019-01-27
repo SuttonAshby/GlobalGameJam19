@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pickupable : MonoBehaviour
 {
+    public string fruitType;
     // Start is called before the first frame update
     void Start()
     {

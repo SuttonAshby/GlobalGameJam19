@@ -86,6 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7319858947154496419}
+  - component: {fileID: 8936536278729857181}
   m_Layer: 0
   m_Name: apple
   m_TagString: Untagged
@@ -109,6 +110,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8936536278729857181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572666452246202005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e32c816ac2f8a4e9db764dcf1bc27b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clips:
+  - {fileID: 8300000, guid: 83ac558dc313c444692431285aecee13, type: 3}
+  - {fileID: 8300000, guid: f2da3f3cda6803943904bd3e832e7627, type: 3}
+  - {fileID: 8300000, guid: b1f8b6076500fb94c95760daf36e4b43, type: 3}
+  - {fileID: 8300000, guid: c81fa6012565b2c4b94ee3cd1bdee357, type: 3}
+  - {fileID: 8300000, guid: 65bb18727d2d1904e87963313aef2b24, type: 3}
+  Volume: 0
+  RandomVolume: 0
+  Pitch: 0
+  RandomPitch: 0
+  Loop: 0
+  Blend: 1
 --- !u!1 &7590575294488318374
 GameObject:
   m_ObjectHideFlags: 0
