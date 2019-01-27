@@ -7,10 +7,15 @@ public class TreeScript : MonoBehaviour
     public GameObject menuPanel;
     public string fruitType;
     public GameObject spawnee;
-    public Transform spawnPos;
+    public Vector3 spawnPos;
     private bool canSpawn;
     private float targetTime = 10f;
-    
+
+    void Start()
+    {
+        menuPanel = GameObject.Find("inputpromptBackground");
+    }
+
     void Update(){
         if(!canSpawn){
            targetTime -= Time.deltaTime;
@@ -50,7 +55,8 @@ public class TreeScript : MonoBehaviour
     }
 
     public void spawnFruit(){
-        Instantiate(spawnee, spawnPos.position, spawnPos.rotation);
+        spawnPos = GameObject.Find("Player").transform.position + Vector3.forward;
+        Instantiate(spawnee, spawnPos, Quaternion.identity);
     }
 
     // void OnTriggerStay(Collider other){
