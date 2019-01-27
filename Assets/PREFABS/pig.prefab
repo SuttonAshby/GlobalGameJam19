@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7771022121329919711}
   - component: {fileID: 7188748442542620522}
+  - component: {fileID: 2776620773296871791}
   m_Layer: 0
   m_Name: pig
   m_TagString: Untagged
@@ -45,6 +46,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.021935, y: 1.9764986, z: 3.8882942}
   m_Center: {x: 0.023356438, y: -0.016412497, z: 0.025021791}
+--- !u!114 &2776620773296871791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4379230168199471371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beea0b80d7f151348ad3c4febd6983bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clips: []
+  Volume: 0
+  RandomVolume: 0
+  Pitch: 0
+  RandomPitch: 0
+  Loop: 0
+  Blend: 1
 --- !u!1 &6263460594414000022
 GameObject:
   m_ObjectHideFlags: 0
