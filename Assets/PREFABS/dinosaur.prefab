@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1610357486626692209}
   - component: {fileID: 3883141386004791328}
   - component: {fileID: 4424259427361100480}
+  - component: {fileID: 8657166624195169829}
   m_Layer: 0
   m_Name: dinosaur
   m_TagString: Untagged
@@ -112,3 +113,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Threshhold: 0.1
   RandomTiming: 0
+  willPlay: 0
+--- !u!65 &8657166624195169829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6689468600612903120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.564742, y: 0.85322046, z: 0.34923422}
+  m_Center: {x: -0.021016836, y: -0.03346066, z: -0.010404311}
