@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class MenuHideControl : MonoBehaviour
 {
@@ -16,13 +17,13 @@ public class MenuHideControl : MonoBehaviour
 
     public void HideMenu()
     {
-        CG.alpha = 0f;
+        CG.DOFade(0f, 0.25f);
         CG.blocksRaycasts = false;
         CG.interactable = false;
     }
 
     public void ShowMenu() {
-        CG.alpha = 1f;
+        CG.DOFade(1f, 0.25f);
         CG.blocksRaycasts = true;
         CG.interactable = true;
     }
