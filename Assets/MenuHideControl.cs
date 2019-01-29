@@ -15,6 +15,12 @@ public class MenuHideControl : MonoBehaviour
         CG = GetComponent<CanvasGroup>();
     }
 
+    public void InitializeMenu() {
+        CG.DOFade(0f, 0f);
+        CG.blocksRaycasts = false;
+        CG.interactable = false;
+    }
+
     public void HideMenu()
     {
         CG.DOFade(0f, 0.25f);

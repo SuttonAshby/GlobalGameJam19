@@ -17,7 +17,7 @@ public class DynamicMenuScript : MonoBehaviour
     void Start()
     {
         menuPanel = transform.Find("inputpromptBackground").GetComponent<MenuHideControl>();
-        menuPanel.HideMenu();
+        menuPanel.InitializeMenu();
         waitingForKey = false;
 
         //setting up for initial movement
