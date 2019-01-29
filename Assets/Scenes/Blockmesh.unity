@@ -3284,6 +3284,38 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &224422445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
+    type: 3}
+  m_PrefabInstance: {fileID: 4638861118192964944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &224422448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224422445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9477f6386b44eefb298e01f50176db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CG: {fileID: 0}
+  IsMenuHidden: 0
+--- !u!225 &224422449
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224422445}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!43 &266909327
 Mesh:
   m_ObjectHideFlags: 0
@@ -40849,8 +40881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: dinosaur
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40864,8 +40895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: dinosaur
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40879,8 +40909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: dinosaur
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40894,8 +40923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: dinosaur
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40909,8 +40937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: sheep
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40924,8 +40951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: sheep
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40939,8 +40965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: dinosaur
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40954,8 +40979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: dinosaur
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40983,8 +41007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: dinosaur
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40998,8 +41021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: dinosaur
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41013,8 +41035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: sheep
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41028,8 +41049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: sheep
-  menuPanel: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
-    type: 3}
+  menuPanel: {fileID: 0}
 --- !u!114 &1618555762863717867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41235,6 +41255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: inputpromptBackground
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638861117234153945, guid: f4f2d1788263c974a9e255e7bd4d3703,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4638861117234153946, guid: f4f2d1788263c974a9e255e7bd4d3703,
         type: 3}

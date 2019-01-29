@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DynamicMenuScript : MonoBehaviour
 {
-    Transform menuPanel;
+    MenuHideControl menuPanel;
     Event keyEvent;
     Text buttonText;
     KeyCode newKey;
@@ -16,8 +16,8 @@ public class DynamicMenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        menuPanel = transform.Find("inputpromptBackground");
-        menuPanel.gameObject.SetActive(false);
+        menuPanel = transform.Find("inputpromptBackground").GetComponent<MenuHideControl>();
+        menuPanel.HideMenu();
         waitingForKey = false;
 
         //setting up for initial movement
@@ -48,7 +48,8 @@ public class DynamicMenuScript : MonoBehaviour
     {
         //for testing purposes comment out later
         if(Input.GetKeyDown(KeyCode.Escape)){
-            menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+            //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+            menuPanel.ToggleMenu();
         }
     }
 
@@ -139,7 +140,8 @@ public class DynamicMenuScript : MonoBehaviour
 
     public void resetCurrentBinding(){
         GameManager.Instance.currentBinding = "";
-        menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+        //    menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+        menuPanel.ToggleMenu();
     }
 
     public void resetBindings(){
@@ -174,20 +176,20 @@ public class DynamicMenuScript : MonoBehaviour
 
     //updates text of Buttons
     //should be redundant
-    public void loopPanelNames(){
-        for(int i = 0; i < menuPanel.childCount; i++){
-            if(menuPanel.GetChild(i).name == "ForwardKey")
-                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.forward.ToString();
-            else if(menuPanel.GetChild(i).name == "BackwardKey")
-                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.backward.ToString();
-            else if(menuPanel.GetChild(i).name == "LeftKey")
-                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.left.ToString();
-            else if(menuPanel.GetChild(i).name == "RightKey")
-                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.right.ToString();
-            else if(menuPanel.GetChild(i).name == "PickApple")
-                menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.pickApple.ToString();
-        }
-    }
+    //public void loopPanelNames(){
+    //    for(int i = 0; i < menuPanel.childCount; i++){
+    //        if(menuPanel.GetChild(i).name == "ForwardKey")
+    //            menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.forward.ToString();
+    //        else if(menuPanel.GetChild(i).name == "BackwardKey")
+    //            menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.backward.ToString();
+    //        else if(menuPanel.GetChild(i).name == "LeftKey")
+    //            menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.left.ToString();
+    //        else if(menuPanel.GetChild(i).name == "RightKey")
+    //            menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.right.ToString();
+    //        else if(menuPanel.GetChild(i).name == "PickApple")
+    //            menuPanel.GetChild(i).GetComponentInChildren<Text>().text = GameManager.Instance.pickApple.ToString();
+    //    }
+    //}
 
 }
 

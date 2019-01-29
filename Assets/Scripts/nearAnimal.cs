@@ -5,11 +5,11 @@ using UnityEngine;
 public class nearAnimal : MonoBehaviour
 {
     public string animal;
-    public GameObject menuPanel;
+    public MenuHideControl menuPanel;
 
     void Start()
     {
-        menuPanel = GameObject.Find("inputpromptBackground");
+        menuPanel = GameObject.Find("inputpromptBackground").GetComponent<MenuHideControl>();
     }
 
     void OnTriggerEnter(Collider other){
@@ -19,19 +19,22 @@ public class nearAnimal : MonoBehaviour
             GameManager.Instance.nearCow = true;
             if(GameManager.Instance.feedCow.ToString() == "None"){
                 GameManager.Instance.currentBinding = "feedCow";
-                menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.ToggleMenu();
             }
         } else if(animal == "sheep"){
             GameManager.Instance.nearSheep = true;
             if(GameManager.Instance.feedSheep.ToString() == "None"){
                 GameManager.Instance.currentBinding = "feedSheep";
-                menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.ToggleMenu();
             }
         } else if(animal == "pig"){
             GameManager.Instance.nearPig = true;
             if(GameManager.Instance.feedPig.ToString() == "None"){
                 GameManager.Instance.currentBinding = "feedPig";
-                menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.ToggleMenu();
             }
         }        
     }

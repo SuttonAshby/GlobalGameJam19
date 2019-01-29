@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TreeScript : MonoBehaviour
 {
-    public GameObject menuPanel;
+    public MenuHideControl menuPanel;
     public string fruitType;
     public GameObject spawnee;
     public Vector3 spawnPos;
@@ -13,7 +13,7 @@ public class TreeScript : MonoBehaviour
 
     void Start()
     {
-        menuPanel = GameObject.Find("inputpromptBackground");
+        menuPanel = GameObject.Find("inputpromptBackground").GetComponent<MenuHideControl>();
     }
 
     void Update(){
@@ -33,7 +33,8 @@ public class TreeScript : MonoBehaviour
         if(fruitType == "apple"){
             if(GameManager.Instance.pickApple.ToString() == "None"){
                 GameManager.Instance.currentBinding = "pickApple";
-                menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.ToggleMenu();
                 //instantiate apples from this tree
             }
         } else if(fruitType == "coconut"){
@@ -41,13 +42,15 @@ public class TreeScript : MonoBehaviour
             if(GameManager.Instance.pickCoconut.ToString() == "None"){
                 GameManager.Instance.currentBinding = "pickCoconut";
                 Debug.Log(GameManager.Instance.currentBinding);
-                menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.ToggleMenu();
                 //instantiate coconuts from this tree
             }
         } else if(fruitType == "orange"){
             if(GameManager.Instance.pickOrange.ToString() == "None"){
                 GameManager.Instance.currentBinding = "pickOrange";
-                menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.ToggleMenu();
                 //instantiate oranges from this tree
             } 
         }
