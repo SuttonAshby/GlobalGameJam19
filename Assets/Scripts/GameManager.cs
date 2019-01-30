@@ -72,18 +72,75 @@ public class GameManager : MonoBehaviour {
     void Update(){
         timeLeft -= Time.deltaTime;
         if(timeLeft < 0){
-            if(lives > 0){
+            if(lives > 1){
                 lives -= 1;
                 timeLeft = 60f;
                 SceneManager.LoadScene("Blockmesh"); 
             } else {
-                lives = 100;
+                lives = 101;
                 //hard reset
+                resetBindings();
+                SceneManager.LoadScene("Blockmesh");
             }
-   
         }    
     }
 
-  
+    public void resetBindings(){
+        //movement
+        resetForward();
+        resetBackward();
+        resetLeft();
+        resetRight();
+        //pick ups
+        resetPickApple();
+        resetPickOrange();
+        resetPickCoconut();
+        //setting feeding
+        resetFeedCow();
+        resetFeedSheep();
+        resetFeedPig();
+        //resets the list of already bound keycodes
+        boundKeyCodes.Clear();
+    }
 
+    public void resetForward(){
+        forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "W");
+        PlayerPrefs.SetString("forwardKey", forward.ToString());
+    }
+    public void resetBackward(){
+        backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "S");
+        PlayerPrefs.SetString("backwardKey", backward.ToString());
+    }
+    public void resetLeft(){
+        left = (KeyCode) System.Enum.Parse(typeof(KeyCode), "A");
+        PlayerPrefs.SetString("leftKey", left.ToString());
+    }
+    public void resetRight(){
+        right = (KeyCode) System.Enum.Parse(typeof(KeyCode), "D");
+        PlayerPrefs.SetString("rightKey", right.ToString());
+    }
+    public void resetPickApple(){
+        pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("pickApple", pickApple.ToString());
+    }
+    public void resetPickOrange(){
+        pickOrange = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("pickOrange", pickOrange.ToString());
+    }
+    public void resetPickCoconut(){
+        pickCoconut = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("pickCoconut", pickCoconut.ToString());
+    }
+    public void resetFeedCow(){
+        feedCow = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("feedCow", feedCow.ToString());
+    }
+    public void resetFeedSheep(){
+        feedSheep = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("feedSheep", feedSheep.ToString());
+    }
+    public void resetFeedPig(){
+        feedPig = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("feedPig", feedPig.ToString());
+    }
 }
