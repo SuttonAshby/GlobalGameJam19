@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 5307982494728644921}
   - component: {fileID: 4331546608106506715}
   - component: {fileID: 2991635633721873619}
+  - component: {fileID: 7716311722474161871}
   m_Layer: 0
   m_Name: apple-carrying
   m_TagString: Untagged
@@ -189,7 +190,8 @@ AudioSource:
   m_GameObject: {fileID: 3572666452246202005}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243943782589683360, guid: 6a54713f522e0e24d86237685d889372,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -276,6 +278,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7716311722474161871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572666452246202005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3486cb88fe388f4288252d117386795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7590575294488318374
 GameObject:
   m_ObjectHideFlags: 0

@@ -60,6 +60,7 @@ public class TreeScript : MonoBehaviour
     public void spawnFruit(){
         spawnPos = GameObject.Find("Player").transform.position + Vector3.forward;
         Instantiate(spawnee, spawnPos, Quaternion.identity);
+        GetComponent<ObjectSounds>().PlayRandomSound();
     }
 
     // void OnTriggerStay(Collider other){
