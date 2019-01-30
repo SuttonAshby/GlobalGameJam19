@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 9038778492518301200}
   - component: {fileID: 5998487730618263191}
   - component: {fileID: 607699837614484674}
+  - component: {fileID: 5796384910915139893}
   - component: {fileID: 6942948329147904836}
   m_Layer: 0
   m_Name: fruit-tree apple
@@ -155,13 +156,113 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e32c816ac2f8a4e9db764dcf1bc27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clips: []
+  Clips:
+  - {fileID: 8300000, guid: e1ee1dd0a177eef4db09ff0d44c48107, type: 3}
+  - {fileID: 8300000, guid: 0bdd45c900a77344e9b254d8bbbcb316, type: 3}
+  - {fileID: 8300000, guid: 035105eab0a66b247aa314b5589e055d, type: 3}
   Volume: 0
   RandomVolume: 0
   Pitch: 0
   RandomPitch: 0
   Loop: 0
   Blend: 1
+--- !u!82 &5796384910915139893
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4296921455011401609}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243943782589683360, guid: 6a54713f522e0e24d86237685d889372,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &6942948329147904836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +278,7 @@ MonoBehaviour:
   menuPanel: {fileID: 0}
   fruitType: apple
   spawnee: {fileID: 3572666452246202005, guid: 2cf340aec64464a138fca7fc42991527, type: 3}
-  spawnPos: {fileID: 0}
+  spawnPos: {x: 0, y: 0, z: 0}
 --- !u!1 &8625473800375358976
 GameObject:
   m_ObjectHideFlags: 0

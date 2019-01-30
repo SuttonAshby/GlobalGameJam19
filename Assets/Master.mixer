@@ -69,7 +69,8 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: c289ac5b580018141ad8f10836def889
-  m_FloatValues: {}
+  m_FloatValues:
+    eadbc82097c070d4abbf6928691976aa: -0.54210335
   m_TransitionOverrides: {}
 --- !u!243 &243012214558313852
 AudioMixerGroupController:
@@ -85,6 +86,7 @@ AudioMixerGroupController:
   m_Pitch: ec80513c730951e40a1a192af25221cf
   m_Effects:
   - {fileID: 244858286290427112}
+  - {fileID: 244837189917701676}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -103,6 +105,7 @@ AudioMixerGroupController:
   m_Pitch: dfcf9250b2de23641bd504a306790116
   m_Effects:
   - {fileID: 244267607363304338}
+  - {fileID: 244452187713040476}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -151,6 +154,48 @@ AudioMixerEffectController:
   m_MixLevel: d193fcacd601b2a4ea4b3a363abde4a8
   m_Parameters: []
   m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244452187713040476
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 1e26597a3824ca542a9afe01b5c72352
+  m_EffectName: Duck Volume
+  m_MixLevel: d91e3688a0e80d34c9330c54711613f3
+  m_Parameters:
+  - m_ParameterName: Threshold
+    m_GUID: ce02b7bfe2949c846959cd3c27d3fde5
+  - m_ParameterName: Ratio
+    m_GUID: 73f05b3e2a7ba1e4bb66a3bd53a15c5f
+  - m_ParameterName: Attack Time
+    m_GUID: 042cbc65bc1f5914f8e708fcf887d605
+  - m_ParameterName: Release Time
+    m_GUID: e491a9fee6c41b14094eb5f51c5d8cf2
+  - m_ParameterName: Make-up Gain
+    m_GUID: 078c1f11ab83579439a536a6a9af4986
+  - m_ParameterName: Knee
+    m_GUID: 92ed9250b8f58ce499d3c80f1c7b04d1
+  - m_ParameterName: Sidechain Mix
+    m_GUID: 63ce377478ed6204f8c31cef32a59643
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244837189917701676
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6f8fce7c0511627419ef76f488048524
+  m_EffectName: Send
+  m_MixLevel: 3aa532f1b5db7c84f8c3badd4795c029
+  m_Parameters: []
+  m_SendTarget: {fileID: 244452187713040476}
   m_EnableWetMix: 0
   m_Bypass: 0
 --- !u!244 &244858286290427112
