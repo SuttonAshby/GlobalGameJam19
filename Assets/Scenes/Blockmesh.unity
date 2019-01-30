@@ -38007,7 +38007,7 @@ GameObject:
   - component: {fileID: 1824475703}
   - component: {fileID: 1824475702}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GameManger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38026,6 +38026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 100
+  timeLeft: 60
   cowNotEat: apple
   sheepNotEat: coconut
   pigNotEat: orange

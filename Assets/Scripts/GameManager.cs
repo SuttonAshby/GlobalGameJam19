@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour {
   public static GameManager Instance {get; private set; }
 
-    //total lives
+    //total lives and time
     public int lives = 100;
+    public float timeLeft = 60f;
 
     //movment bindings
     public KeyCode forward {get; set;}
@@ -63,6 +66,22 @@ public class GameManager : MonoBehaviour {
         feedPig = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("feedPig", "None"));
     }
 
+    // Update is called once per frame
+    //the timer and either soft or hard resets
+    void Update(){
+        timeLeft -= Time.deltaTime;
+        if(timeLeft < 0){
+            if(lives > 0){
+                lives -= 1;
+                timeLeft = 60f;
+                SceneManager.LoadScene("Blockmesh"); 
+            } else {
+                lives = 100;
+                //hard reset
+            }
+   
+        }    
+    }
 
   
 

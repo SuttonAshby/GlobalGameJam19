@@ -10,6 +10,7 @@ public class DynamicMenuScript : MonoBehaviour
     Text buttonText;
     KeyCode newKey;
     GameObject label;
+    bool isValidKey = false;
 
     bool waitingForKey;
 
@@ -56,9 +57,11 @@ public class DynamicMenuScript : MonoBehaviour
     void OnGUI(){
         keyEvent = Event.current;
 
-        if(keyEvent.isKey && waitingForKey){
+        if(keyEvent.isKey && waitingForKey && char.IsLetter(keyEvent.keyCode.ToString()[0]) && keyEvent.keyCode.ToString().Length == 1){
+            Debug.Log(keyEvent.keyCode);
             newKey = keyEvent.keyCode;
             waitingForKey = false;
+            isValidKey = true;
         }
     }
 
@@ -139,9 +142,12 @@ public class DynamicMenuScript : MonoBehaviour
     }
 
     public void resetCurrentBinding(){
+        if(isValidKey){
         GameManager.Instance.currentBinding = "";
         //    menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
         menuPanel.ToggleMenu();
+        isValidKey = false;
+        }
     }
 
     public void resetBindings(){

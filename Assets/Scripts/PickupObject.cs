@@ -80,8 +80,10 @@ public class PickupObject : MonoBehaviour
         if(Input.GetKeyDown(GameManager.Instance.pickOrange)){
             int x = Screen.width / 2;
             int y = Screen.height / 2;
-
+            //casts from center of screen
             Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x,y));
+            //should cast from mouse position
+            // Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit)) {
                 Pickupable p = hit.collider.GetComponent<Pickupable>();
