@@ -5,11 +5,11 @@ using UnityEngine;
 public class nearAnimal : MonoBehaviour
 {
     public string animal;
-    public MenuHideControl menuPanel;
+    public MenuControl menuPanel;
 
     void Start()
     {
-        menuPanel = GameObject.Find("inputpromptBackground").GetComponent<MenuHideControl>();
+        menuPanel = GameObject.Find("inputpromptBackground").GetComponent<MenuControl>();
     }
 
     void OnTriggerEnter(Collider other){
@@ -20,6 +20,7 @@ public class nearAnimal : MonoBehaviour
             if(GameManager.Instance.feedCow.ToString() == "None"){
                 GameManager.Instance.currentBinding = "feedCow";
                 //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.UpdateMenu("feedCow");
                 menuPanel.ToggleMenu();
             }
         } else if(animal == "sheep"){
@@ -27,6 +28,7 @@ public class nearAnimal : MonoBehaviour
             if(GameManager.Instance.feedSheep.ToString() == "None"){
                 GameManager.Instance.currentBinding = "feedSheep";
                 //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.UpdateMenu("feedSheep");
                 menuPanel.ToggleMenu();
             }
         } else if(animal == "pig"){
@@ -34,6 +36,7 @@ public class nearAnimal : MonoBehaviour
             if(GameManager.Instance.feedPig.ToString() == "None"){
                 GameManager.Instance.currentBinding = "feedPig";
                 //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.UpdateMenu("feedPig");
                 menuPanel.ToggleMenu();
             }
         }        

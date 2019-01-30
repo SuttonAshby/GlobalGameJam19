@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TreeScript : MonoBehaviour
 {
-    public MenuHideControl menuPanel;
+    public MenuControl menuPanel;
     public string fruitType;
     public GameObject spawnee;
     public Vector3 spawnPos;
@@ -13,7 +13,7 @@ public class TreeScript : MonoBehaviour
 
     void Start()
     {
-        menuPanel = GameObject.Find("inputpromptBackground").GetComponent<MenuHideControl>();
+        menuPanel = GameObject.Find("inputpromptBackground").GetComponent<MenuControl>();
     }
 
     void Update(){
@@ -34,6 +34,7 @@ public class TreeScript : MonoBehaviour
             if(GameManager.Instance.pickApple.ToString() == "None"){
                 GameManager.Instance.currentBinding = "pickApple";
                 //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.UpdateMenu("pickApple");
                 menuPanel.ToggleMenu();
                 //instantiate apples from this tree
             }
@@ -43,6 +44,7 @@ public class TreeScript : MonoBehaviour
                 GameManager.Instance.currentBinding = "pickCoconut";
                 Debug.Log(GameManager.Instance.currentBinding);
                 //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.UpdateMenu("pickCoconut");
                 menuPanel.ToggleMenu();
                 //instantiate coconuts from this tree
             }
@@ -50,6 +52,7 @@ public class TreeScript : MonoBehaviour
             if(GameManager.Instance.pickOrange.ToString() == "None"){
                 GameManager.Instance.currentBinding = "pickOrange";
                 //menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
+                menuPanel.UpdateMenu("pickOrange");
                 menuPanel.ToggleMenu();
                 //instantiate oranges from this tree
             } 

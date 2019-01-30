@@ -6078,6 +6078,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _entityType: 0
+--- !u!1 &418578900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8019488730168569870, guid: cd10960811b2d495194c0b06e52840a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 170221204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &418578902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418578900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb69e39754c34f9bab79685f99b1c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CG: {fileID: 0}
+  IsMenuHidden: 0
+  VerbDisplay: {fileID: 0}
+  AppleIcon: {fileID: 0}
+  OrangeIcon: {fileID: 0}
+  CoconutIcon: {fileID: 0}
+  BootIcom: {fileID: 0}
+  CowIcon: {fileID: 0}
+  SheepIcon: {fileID: 0}
+  PigIcon: {fileID: 0}
+  DinoIcon: {fileID: 0}
 --- !u!43 &466159673
 Mesh:
   m_ObjectHideFlags: 0

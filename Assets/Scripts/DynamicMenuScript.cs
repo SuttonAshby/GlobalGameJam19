@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DynamicMenuScript : MonoBehaviour
 {
-    MenuHideControl menuPanel;
+    MenuControl menuPanel;
     Event keyEvent;
     Text buttonText;
     KeyCode newKey;
@@ -17,7 +17,7 @@ public class DynamicMenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        menuPanel = transform.Find("inputpromptBackground").GetComponent<MenuHideControl>();
+        menuPanel = GameObject.Find("inputpromptBackground").GetComponent<MenuControl>();
         menuPanel.InitializeMenu();
         waitingForKey = false;
 
@@ -145,7 +145,7 @@ public class DynamicMenuScript : MonoBehaviour
         if(isValidKey){
         GameManager.Instance.currentBinding = "";
         //    menuPanel.gameObject.SetActive(!menuPanel.gameObject.activeSelf);
-        menuPanel.ToggleMenu();
+        menuPanel.HideMenu();
         isValidKey = false;
         }
     }
