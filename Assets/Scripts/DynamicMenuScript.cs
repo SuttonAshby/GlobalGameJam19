@@ -11,8 +11,9 @@ public class DynamicMenuScript : MonoBehaviour
     KeyCode newKey;
     GameObject label;
     bool isValidKey = false;
-
+    
     bool waitingForKey;
+
 
     // Start is called before the first frame update
     void Start()
@@ -58,7 +59,14 @@ public class DynamicMenuScript : MonoBehaviour
         keyEvent = Event.current;
 
         if(keyEvent.isKey && waitingForKey && char.IsLetter(keyEvent.keyCode.ToString()[0]) && keyEvent.keyCode.ToString().Length == 1){
-            Debug.Log(keyEvent.keyCode);
+            // Debug.Log(keyEvent.keyCode);
+            if(!GameManager.Instance.boundKeyCodes.Contains(keyEvent.keyCode)){
+                GameManager.Instance.boundKeyCodes.Add(keyEvent.keyCode);
+                // Debug.Log(GameManager.Instance.boundKeyCodes[0]);
+            } else {
+                //remove old binding
+                removeOldBinding();
+            }
             newKey = keyEvent.keyCode;
             waitingForKey = false;
             isValidKey = true;
@@ -152,34 +160,86 @@ public class DynamicMenuScript : MonoBehaviour
 
     public void resetBindings(){
         //movement
-        GameManager.Instance.forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "W");
-        GameManager.Instance.backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "S");
-        GameManager.Instance.left = (KeyCode) System.Enum.Parse(typeof(KeyCode), "A");
-        GameManager.Instance.right = (KeyCode) System.Enum.Parse(typeof(KeyCode), "D");
+        resetForward();
+        resetBackward();
+        resetLeft();
+        resetRight();
         //pick ups
-        GameManager.Instance.pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
-        GameManager.Instance.pickOrange = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
-        GameManager.Instance.pickCoconut = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        resetPickApple();
+        resetPickOrange();
+        resetPickCoconut();
         //setting feeding
-        GameManager.Instance.feedCow = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
-        GameManager.Instance.feedSheep = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
-        GameManager.Instance.feedPig = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
-        
-        PlayerPrefs.SetString("forwardKey", GameManager.Instance.forward.ToString());
-        PlayerPrefs.SetString("backwardKey", GameManager.Instance.backward.ToString());
-        PlayerPrefs.SetString("leftKey", GameManager.Instance.left.ToString());
-        PlayerPrefs.SetString("rightKey", GameManager.Instance.right.ToString());
-        
-        PlayerPrefs.SetString("pickApple", GameManager.Instance.pickApple.ToString());
-        PlayerPrefs.SetString("pickOrange", GameManager.Instance.pickOrange.ToString());
-        PlayerPrefs.SetString("pickCoconut", GameManager.Instance.pickCoconut.ToString());
-        
-        PlayerPrefs.SetString("feedCow", GameManager.Instance.feedCow.ToString());
-        PlayerPrefs.SetString("feedSheep", GameManager.Instance.feedSheep.ToString());
-        PlayerPrefs.SetString("feedPig", GameManager.Instance.feedPig.ToString());
-        // loopPanelNames();
+        resetFeedCow();
+        resetFeedSheep();
+        resetFeedPig();
+        //resets the list of already bound keycodes
+        GameManager.Instance.boundKeyCodes.Clear();
     }
 
+    void resetForward(){
+        GameManager.Instance.forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "W");
+        PlayerPrefs.SetString("forwardKey", GameManager.Instance.forward.ToString());
+    }
+    void resetBackward(){
+        GameManager.Instance.backward = (KeyCode) System.Enum.Parse(typeof(KeyCode), "S");
+        PlayerPrefs.SetString("backwardKey", GameManager.Instance.backward.ToString());
+    }
+    void resetLeft(){
+        GameManager.Instance.left = (KeyCode) System.Enum.Parse(typeof(KeyCode), "A");
+        PlayerPrefs.SetString("leftKey", GameManager.Instance.left.ToString());
+    }
+    void resetRight(){
+        GameManager.Instance.right = (KeyCode) System.Enum.Parse(typeof(KeyCode), "D");
+        PlayerPrefs.SetString("rightKey", GameManager.Instance.right.ToString());
+    }
+    void resetPickApple(){
+        GameManager.Instance.pickApple = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("pickApple", GameManager.Instance.pickApple.ToString());
+    }
+    void resetPickOrange(){
+        GameManager.Instance.pickOrange = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("pickOrange", GameManager.Instance.pickOrange.ToString());
+    }
+    void resetPickCoconut(){
+        GameManager.Instance.pickCoconut = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("pickCoconut", GameManager.Instance.pickCoconut.ToString());
+    }
+    void resetFeedCow(){
+        GameManager.Instance.feedCow = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("feedCow", GameManager.Instance.feedCow.ToString());
+    }
+    void resetFeedSheep(){
+        GameManager.Instance.feedSheep = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("feedSheep", GameManager.Instance.feedSheep.ToString());
+    }
+    void resetFeedPig(){
+        GameManager.Instance.feedPig = (KeyCode) System.Enum.Parse(typeof(KeyCode), "None");
+        PlayerPrefs.SetString("feedPig", GameManager.Instance.feedPig.ToString());
+    }
+
+    void removeOldBinding(){
+        if(GameManager.Instance.forward == keyEvent.keyCode){
+            resetForward();
+        } else if(GameManager.Instance.backward == keyEvent.keyCode){
+            resetBackward();
+        } else if(GameManager.Instance.left == keyEvent.keyCode){
+            resetLeft();
+        } else if(GameManager.Instance.right == keyEvent.keyCode){
+            resetRight();
+        } else if(GameManager.Instance.pickApple == keyEvent.keyCode){
+            resetPickApple();
+        } else if(GameManager.Instance.pickCoconut == keyEvent.keyCode){
+            resetPickCoconut();
+        } else if(GameManager.Instance.pickOrange == keyEvent.keyCode){
+            resetPickOrange();
+        } else if(GameManager.Instance.feedCow == keyEvent.keyCode){
+            resetFeedCow();
+        } else if(GameManager.Instance.feedSheep == keyEvent.keyCode){
+            resetFeedSheep();
+        } else if(GameManager.Instance.feedPig == keyEvent.keyCode){
+            resetFeedPig();
+        }
+    }
     //updates text of Buttons
     //should be redundant
     //public void loopPanelNames(){

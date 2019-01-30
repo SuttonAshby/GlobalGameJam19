@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
     //total lives and time
     public int lives = 100;
     public float timeLeft = 60f;
+    public List<KeyCode> boundKeyCodes = new List <KeyCode> ();
 
     //movment bindings
     public KeyCode forward {get; set;}
