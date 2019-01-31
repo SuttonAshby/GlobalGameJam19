@@ -43,8 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8904c376cb5a4c9691a7bac71beac5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 100
+  lives: 25
+  startTimeLeft: 150
   timeLeft: 60
+  boundKeyCodes: 
   cowNotEat: apple
   sheepNotEat: orange
   pigNotEat: coconut

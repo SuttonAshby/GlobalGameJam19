@@ -8,8 +8,9 @@ public class GameManager : MonoBehaviour {
   public static GameManager Instance {get; private set; }
 
     //total lives and time
-    public int lives = 100;
-    public float timeLeft = 60f;
+    public int lives = 40;
+    public float startTimeLeft = 120f;
+    public float timeLeft;
     public List<KeyCode> boundKeyCodes = new List <KeyCode> ();
 
     //movment bindings
@@ -48,6 +49,9 @@ public class GameManager : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
+        //Initialize timer
+        timeLeft = startTimeLeft;
+
     //setting bindings to player preferences or default
     //setting movement
     forward = (KeyCode) System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("forwardKey", "W"));
@@ -74,7 +78,7 @@ public class GameManager : MonoBehaviour {
         if(timeLeft < 0){
             if(lives > 1){
                 lives -= 1;
-                timeLeft = 60f;
+                timeLeft = startTimeLeft;
                 SceneManager.LoadScene("Blockmesh"); 
             } else {
                 lives = 101;
