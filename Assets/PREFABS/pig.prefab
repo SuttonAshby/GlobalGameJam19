@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1575016074356479043}
   - component: {fileID: 4467411686043914373}
   - component: {fileID: 6621467457966180508}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 7174000976550271136}
   - component: {fileID: 519671983364016627}
   - component: {fileID: 5945088310257159073}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pig_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

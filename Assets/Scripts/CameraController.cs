@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour
     // public float speed = 3f;
 
     public float lookSpeed = 3;
-    private Vector2 rotation = Vector2.zero;
+    private Vector2 rotation = new Vector3(0, 100, 0);
     public void Update() // Look rotation (UP down is Camera) (Left right is Transform rotation)
     {
         rotation.y += Input.GetAxis("Mouse X");

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 246646479399392957}
   - component: {fileID: 8039148563454791211}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: new-fruit-tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 1672790797258426491}
   - component: {fileID: 7423700901305750886}
   - component: {fileID: 366823023036011793}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 4223298427000930770}
   - component: {fileID: 4363275698941798226}
   - component: {fileID: 8433298087403794167}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: trunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
