@@ -40912,6 +40912,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7613589407646975266, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -195.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613589407646975266, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910876826087373013, guid: f06b652eb3dc93f46a3b81dd45ef6bd8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f06b652eb3dc93f46a3b81dd45ef6bd8, type: 3}
 --- !u!1 &1618555762863717841 stripped
@@ -41383,7 +41398,7 @@ PrefabInstance:
     - target: {fileID: 2028026395181777064, guid: 470089ec5ff534e7d92779e18bc61a9f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 207.4
+      value: 284.2
       objectReference: {fileID: 0}
     - target: {fileID: 2028026395181777064, guid: 470089ec5ff534e7d92779e18bc61a9f,
         type: 3}
@@ -41393,7 +41408,7 @@ PrefabInstance:
     - target: {fileID: 2028026395181777064, guid: 470089ec5ff534e7d92779e18bc61a9f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 257.5
+      value: 235
       objectReference: {fileID: 0}
     - target: {fileID: 2028026395181777064, guid: 470089ec5ff534e7d92779e18bc61a9f,
         type: 3}
@@ -41433,6 +41448,11 @@ PrefabInstance:
     - target: {fileID: 2028026395181777064, guid: 470089ec5ff534e7d92779e18bc61a9f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028026395181777070, guid: 470089ec5ff534e7d92779e18bc61a9f,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
