@@ -9,19 +9,22 @@ public class TreeScript : MonoBehaviour
     public GameObject spawnee;
     public Vector3 spawnPos;
     private bool canSpawn;
-    private float targetTime = 10f;
+    private float targetTime = 30f;
+    private float timer;
 
     void Start()
     {
         menuPanel = GameObject.Find("inputpromptBackground").GetComponent<MenuControl>();
+        timer = 0;
+        canSpawn = true;
     }
 
     void Update(){
         if(!canSpawn){
            targetTime -= Time.deltaTime;
            if(targetTime <= 0.0f){
+               targetTime = 0.0f;
                canSpawn = true;
-               targetTime = 10f;
            } 
         }
 
@@ -57,11 +60,19 @@ public class TreeScript : MonoBehaviour
                 //instantiate oranges from this tree
             } 
         }
+
+        if (canSpawn)
+        {
+            Debug.Log("spawning");
+            spawnFruit();
+            canSpawn = false;
+            timer = targetTime;
+        }
         
     }
 
     public void spawnFruit(){
-        spawnPos = GameObject.Find("Player").transform.position + Vector3.forward;
+        spawnPos = ((GameObject.Find("Player").transform.position + transform.position) / 2) + (Vector3.up * 3.5f);
         Instantiate(spawnee, spawnPos, Quaternion.identity);
         GetComponent<ObjectSounds>().PlayRandomSound();
     }
@@ -71,11 +82,7 @@ public class TreeScript : MonoBehaviour
     // }
     void OnTriggerExit(Collider other){
         Debug.Log("Object exited the trigger");
-        if(canSpawn){
-            Debug.Log("spawning");
-            spawnFruit();
-            canSpawn = false;
-        }
+       
         
     }
 }
