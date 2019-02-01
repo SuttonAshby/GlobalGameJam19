@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class GameManager : MonoBehaviour {
-  public static GameManager Instance {get; private set; }
+public class GameManager : MonoBehaviour
+{
+    public static GameManager Instance { get; private set; }
 
     //total lives and time
     public int lives = 40;
-    public float startTimeLeft = 120f;
+    public float startTimeLeft = 123f;
+    public int score = 0;
     public float timeLeft;
     public List<KeyCode> boundKeyCodes = new List <KeyCode> ();
 
@@ -105,6 +107,15 @@ public class GameManager : MonoBehaviour {
         resetFeedPig();
         //resets the list of already bound keycodes
         boundKeyCodes.Clear();
+    }
+
+    public void scoreUp () {
+        score++;
+        Debug.Log("Score goes up! Score: " + score);
+    }
+
+    public void scoreReset () {
+        score = 0;
     }
 
     public void resetForward(){

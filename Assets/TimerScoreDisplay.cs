@@ -26,10 +26,11 @@ public class TimerScoreDisplay : MonoBehaviour
     void Update()
     {
         TimerDisplayUpdate();
+        ScoreDisplayUpdate();
     }
 
     void ScoreDisplayUpdate() {
-        //        ScoreDisplay.text = ""+ GM.Score;
+        ScoreDisplay.text = ""+ GM.score;
     }
 
     void TimerDisplayUpdate()

@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1532843846007908087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2458994022108589188}
+  - component: {fileID: 6008690121843619089}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2458994022108589188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532843846007908087}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 3.483558, y: -0.35604015, z: 0.7684324}
+  m_LocalScale: {x: 99.56306, y: 99.56303, z: 99.56303}
+  m_Children: []
+  m_Father: {fileID: 3196056555133676536}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &6008690121843619089
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532843846007908087}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.014
+  m_Center: {x: -0.035, y: 0.008, z: 0.003}
 --- !u!1 &2374731175258997854
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +136,7 @@ GameObject:
   - component: {fileID: 8412122555486797696}
   - component: {fileID: 4315443117789218362}
   - component: {fileID: 5356809572872875378}
+  - component: {fileID: 5320224724366348400}
   m_Layer: 0
   m_Name: orange-carrying
   m_TagString: Untagged
@@ -112,6 +157,7 @@ Transform:
   m_Children:
   - {fileID: 8330629315075321945}
   - {fileID: 6872009652958149453}
+  - {fileID: 2458994022108589188}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -288,6 +334,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3486cb88fe388f4288252d117386795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5320224724366348400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976858607290370116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f6d3c7f85d44469a8bb5f7117876f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuPanel: {fileID: 0}
+  fruitType: orange
 --- !u!1 &7755947254201309453
 GameObject:
   m_ObjectHideFlags: 0

@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 4331546608106506715}
   - component: {fileID: 2991635633721873619}
   - component: {fileID: 7716311722474161871}
+  - component: {fileID: 7744659046577661408}
   m_Layer: 0
   m_Name: apple-carrying
   m_TagString: Untagged
@@ -290,6 +291,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3486cb88fe388f4288252d117386795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7744659046577661408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572666452246202005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f6d3c7f85d44469a8bb5f7117876f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuPanel: {fileID: 0}
+  fruitType: apple
 --- !u!1 &7590575294488318374
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +316,8 @@ GameObject:
   - component: {fileID: 525239092091403834}
   - component: {fileID: 3631846669094651526}
   - component: {fileID: 5277849538468607810}
-  m_Layer: 0
+  - component: {fileID: 2362762965688499495}
+  m_Layer: 2
   m_Name: Icosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,3 +383,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &2362762965688499495
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7590575294488318374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.011
+  m_Center: {x: 0, y: 0, z: 0.0025}
