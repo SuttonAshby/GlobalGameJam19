@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PickupObject : MonoBehaviour
 {
+    public GameManager GM;
+
     GameObject mainCamera;
     bool carrying;
     GameObject carriedObject;
@@ -15,6 +17,7 @@ public class PickupObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GM = GameObject.Find("Game-Manager").GetComponent<GameManager>();
         mainCamera = GameObject.FindWithTag("MainCamera");
     }
 
@@ -105,14 +108,17 @@ public class PickupObject : MonoBehaviour
             carrying = false;
             Destroy(carriedObject);
             carriedObject = null;
+            GM.scoreUp();
         } else if (Input.GetKeyDown(GameManager.Instance.feedSheep) && GameManager.Instance.nearSheep && (carriedObject.GetComponent<Pickupable>().fruitType != GameManager.Instance.sheepNotEat)){
             carrying = false;
             Destroy(carriedObject);
             carriedObject = null;
+            GM.scoreUp();
         } else if (Input.GetKeyDown(GameManager.Instance.feedPig) && GameManager.Instance.nearPig && (carriedObject.GetComponent<Pickupable>().fruitType != GameManager.Instance.pigNotEat)){
             carrying = false;
             Destroy(carriedObject);
             carriedObject = null;
+            GM.scoreUp();
         }
     }
     void dropObject(){
