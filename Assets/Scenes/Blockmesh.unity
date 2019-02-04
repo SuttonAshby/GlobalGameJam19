@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.26
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04225569, g: 0.052873544, b: 0.073582046, a: 0.26}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0.26}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -41471,3 +41471,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 470089ec5ff534e7d92779e18bc61a9f, type: 3}
+--- !u!1 &3985371534923193419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2028026394064192310, guid: 470089ec5ff534e7d92779e18bc61a9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3985371534923193418}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3985371534923193420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3985371534923193419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c18e6a714fcbe14a85410c4fba890cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OrangeClips:
+  - {fileID: 8300000, guid: 86f5724b073cd9a4faf3fa551efadaaa, type: 3}
+  - {fileID: 8300000, guid: 372ded06166acd54faf24346985749fc, type: 3}
+  - {fileID: 8300000, guid: 0c67480b38226a64599a54e010e30f57, type: 3}
+  CoconutClips:
+  - {fileID: 8300000, guid: 5b8d6ff5bfb3c914d8c437ec9767d785, type: 3}
+  - {fileID: 8300000, guid: 4f0a4de2a6901f84fb8e37198e44367d, type: 3}
+  - {fileID: 8300000, guid: 7ac8c5b853b12c24b995882ae5c5eb7c, type: 3}
+  - {fileID: 8300000, guid: 0a71812d7d1886d46bf9aeccbd1a3426, type: 3}
+  - {fileID: 8300000, guid: 002cc4fe1663d7a4ab0c06baf5e30b29, type: 3}
+  AppleClips:
+  - {fileID: 8300000, guid: 83ac558dc313c444692431285aecee13, type: 3}
+  - {fileID: 8300000, guid: f2da3f3cda6803943904bd3e832e7627, type: 3}
+  - {fileID: 8300000, guid: b1f8b6076500fb94c95760daf36e4b43, type: 3}
+  - {fileID: 8300000, guid: c81fa6012565b2c4b94ee3cd1bdee357, type: 3}
+  - {fileID: 8300000, guid: 65bb18727d2d1904e87963313aef2b24, type: 3}
+  Volume: 0
+  RandomVolume: 0
+  Pitch: 0
+  RandomPitch: 0
+  Loop: 0
+  Blend: 1
