@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 5307982494728644921}
   - component: {fileID: 4331546608106506715}
   - component: {fileID: 2991635633721873619}
-  - component: {fileID: 7716311722474161871}
   - component: {fileID: 7744659046577661408}
   m_Layer: 0
   m_Name: apple-carrying
@@ -279,18 +278,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7716311722474161871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3572666452246202005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3486cb88fe388f4288252d117386795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7744659046577661408
 MonoBehaviour:
   m_ObjectHideFlags: 0

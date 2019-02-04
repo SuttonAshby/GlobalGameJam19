@@ -5,9 +5,9 @@ using UnityEngine;
 public class ChompSound : MonoBehaviour
 {
     
-    void OnDestroy()
-    {
-        gameObject.GetComponent<ObjectSounds>().PlayRandomSound();
-    }
+    //void OnDestroy()
+    //{
+    //    gameObject.GetComponent<ObjectSounds>().PlayRandomSound();
+   // }
 
 }

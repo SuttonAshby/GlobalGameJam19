@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1960722310593987210}
   - component: {fileID: 2831369943616404209}
   - component: {fileID: 1407209411378685720}
-  - component: {fileID: 7445791608619107498}
   - component: {fileID: 8629470264523774500}
   m_Layer: 0
   m_Name: coconut-carrying
@@ -248,18 +247,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7445791608619107498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4227183566085269003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3486cb88fe388f4288252d117386795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8629470264523774500
 MonoBehaviour:
   m_ObjectHideFlags: 0
