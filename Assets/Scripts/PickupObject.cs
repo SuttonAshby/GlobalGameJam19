@@ -107,16 +107,19 @@ public class PickupObject : MonoBehaviour
         } else if (Input.GetKeyDown(GameManager.Instance.feedCow) && GameManager.Instance.nearCow && (carriedObject.GetComponent<Pickupable>().fruitType != GameManager.Instance.cowNotEat)){
             carrying = false;
             Destroy(carriedObject);
+            GetComponent<AnimalChomp>().PlayRandomChomp(carriedObject.GetComponent<Pickupable>().fruitType);
             carriedObject = null;
             GM.scoreUp();
         } else if (Input.GetKeyDown(GameManager.Instance.feedSheep) && GameManager.Instance.nearSheep && (carriedObject.GetComponent<Pickupable>().fruitType != GameManager.Instance.sheepNotEat)){
             carrying = false;
             Destroy(carriedObject);
+            GetComponent<AnimalChomp>().PlayRandomChomp(carriedObject.GetComponent<Pickupable>().fruitType);
             carriedObject = null;
             GM.scoreUp();
         } else if (Input.GetKeyDown(GameManager.Instance.feedPig) && GameManager.Instance.nearPig && (carriedObject.GetComponent<Pickupable>().fruitType != GameManager.Instance.pigNotEat)){
             carrying = false;
             Destroy(carriedObject);
+            GetComponent<AnimalChomp>().PlayRandomChomp(carriedObject.GetComponent<Pickupable>().fruitType);
             carriedObject = null;
             GM.scoreUp();
         }

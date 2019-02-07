@@ -25,8 +25,11 @@ public class AnimalChomp : MonoBehaviour
 
     void Awake()
     {
-        _source = gameObject.AddComponent<AudioSource>();
-
+        _source = GetComponent<AudioSource>();
+        if (_source == null)
+        {
+            _source = gameObject.AddComponent<AudioSource>();
+        }
     }
     void Start()
     {
